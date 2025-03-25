@@ -1,0 +1,21 @@
+bypass-app/
+│── src/
+│   ├── app/                       # Глобальная конфигурация приложения
+│   │   ├── App.tsx                # Корневой компонент  
+│   │   ├── router.tsx             # Настройка маршрутов (Маршрутизация)
+│   ├── entities/                  # Бизнес-сущности (User, Employee, Task и т.д.)
+│   ├── features/                  # Функциональные возможности (Auth, Dashboard и т.д.)
+│   ├── pages/                     # Страницы приложения
+│   │   ├── dashboard              # dashboard  
+│   │   │   ├── DashboardPage.tsx  # Главная страница 
+│   ├── widgets/                   # Переиспользуемые UI-компоненты (Sidebar, Header)
+│   │   ├── layout                 # Компонент layout 
+│   │   │   ├── Layout.tsx         # Основной Layout (каркас приложения)  
+│   │   ├── sidebar                # Компонент sidebar  
+│   │   │   ├── Sidebar.tsx        # Боковое меню  
+│   │   ├── header                 # Компонент header  
+│   │   │   ├── Header.tsx         # Верхний бар (шапка приложения)  
+│   ├── shared/                    # Общие утилиты, хелперы, API
+│   ├── main.tsx                   # Точка входа
+│   ├── vite-env.d.ts              # Глобальная конфигурация приложения
+│── .env  
