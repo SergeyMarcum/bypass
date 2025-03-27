@@ -1,8 +1,15 @@
-import { RouterProvider } from "react-router-dom";
-import { router } from "./router";
+import { ReactRouterAppProvider } from "@toolpad/core/react-router";
+import { Outlet } from "react-router-dom";
+import DashboardLayout from "../widgets/layout/DashboardLayout";
+import { NAVIGATION } from "../shared/config/navigation";
+import theme from "../styles/theme"; // Импортируем кастомную тему
 
-function App() {
-  return <RouterProvider router={router} />;
+export default function App() {
+  return (
+    <ReactRouterAppProvider navigation={NAVIGATION} theme={theme}>
+      <DashboardLayout>
+        <Outlet />
+      </DashboardLayout>
+    </ReactRouterAppProvider>
+  );
 }
-
-export default App;
