@@ -11,8 +11,8 @@ import {
   List,
   ListItem,
   Divider,
-  useTheme,
-  useMediaQuery,
+  // useTheme,
+  //useMediaQuery,
 } from "@mui/material";
 import {
   Bell,
@@ -27,9 +27,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function ToolbarActions() {
   const navigate = useNavigate();
-  const theme = useTheme();
+  /*const theme = useTheme();
   const isSidebarCollapsed = useMediaQuery(theme.breakpoints.down("md"));
-  const sidebarWidth = isSidebarCollapsed ? 56 : 240; // Исправляем ширину боковой панели (по умолчанию в DashboardLayout: 56px для свёрнутой, 240px для полной)
+  const sidebarWidth = isSidebarCollapsed ? 56 : 240; // Исправляем ширину боковой панели (по умолчанию в DashboardLayout: 56px для свёрнутой, 240px для полной)*/
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [searchOpen, setSearchOpen] = useState(false);
